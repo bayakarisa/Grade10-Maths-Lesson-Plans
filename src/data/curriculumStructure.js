@@ -21,8 +21,8 @@ export const curriculumStructure = [
             title: 'Classifying whole numbers as odd, even, prime and composite',
             lessonId: 'classifying-whole-numbers',
             children: [
-              { title: 'Even and Odd Numbers' },
-              { title: 'Prime and Composite Numbers' },
+              { title: 'Even and Odd Numbers', lessonId: 'even-and-odd-numbers' },
+              { title: 'Prime and Composite Numbers', lessonId: 'prime-and-composite-numbers' },
             ],
           },
           {
@@ -30,8 +30,8 @@ export const curriculumStructure = [
             title: 'Classifying real numbers as rational and irrational',
             lessonId: 'classifying-rational-irrational',
             children: [
-              { title: 'Rational Numbers' },
-              { title: 'Irrational Numbers' },
+              { title: 'Rational Numbers', lessonId: 'rational-numbers' },
+              { title: 'Irrational Numbers', lessonId: 'irrational-numbers' },
             ],
           },
           {
@@ -47,10 +47,12 @@ export const curriculumStructure = [
               {
                 code: '1.1.4.1',
                 title: 'Finding reciprocals of numbers using mathematical tables',
+                lessonId: 'reciprocals-using-tables',
               },
               {
                 code: '1.1.4.2',
                 title: 'Finding reciprocals using a calculator',
+                lessonId: 'reciprocals-using-calculator',
               },
             ],
           },

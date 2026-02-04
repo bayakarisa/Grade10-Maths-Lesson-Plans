@@ -20,7 +20,8 @@ function getContentsStructure() {
 
 // Recursive component for hierarchical curriculum structure
 function CurriculumNode({ node, depth = 0, path = [], lessonId }) {
-  const [isExpanded, setIsExpanded] = useState(depth < 2)
+  // Start collapsed by default; user can expand as needed
+  const [isExpanded, setIsExpanded] = useState(false)
   const hasChildren = node.children && node.children.length > 0
   const isLesson = !!node.lessonId
   const nodeKey = node.code || node.title || path.join('-')
